@@ -8,8 +8,23 @@ body {
   margin: 0 auto;
 }
 
+button:focus {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  border: none;
+  outline: none;
+}
+
+button:active {
+  -webkit-transform: translateY(0.5px);
+          transform: translateY(0.5px);
+}
+
 .welcome {
   background: url(../img/header/header-bg.png) no-repeat;
+  background-size: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,25 +96,21 @@ body {
 .welcome__search input::-webkit-input-placeholder {
   color: #b4adad;
   font-size: 15px;
-  position: absolute;
 }
 
 .welcome__search input:-ms-input-placeholder {
   color: #b4adad;
   font-size: 15px;
-  position: absolute;
 }
 
 .welcome__search input::-ms-input-placeholder {
   color: #b4adad;
   font-size: 15px;
-  position: absolute;
 }
 
 .welcome__search input::placeholder {
   color: #b4adad;
   font-size: 15px;
-  position: absolute;
 }
 
 .welcome__search button {
@@ -125,6 +136,10 @@ body {
 .welcome__search button p {
   text-align: center;
   display: inline;
+}
+
+.welcome__search button:hover {
+  background-color: #1e6cb4;
 }
 
 .features__wrap {
@@ -170,6 +185,7 @@ body {
 .main-information {
   color: #fff;
   background: url(../img/main-information/bg.png) no-repeat;
+  background-size: cover;
 }
 
 .main-information__item_vertical {
@@ -227,6 +243,13 @@ body {
   color: #fff;
   font-size: 27px;
   padding: 12px 31px 18px 31px;
+  cursor: pointer;
+}
+
+.main-information__item_horizontal button:hover {
+  color: #44a36f;
+  border: 3px solid #44a36f86;
+  background-color: #fff;
 }
 
 .registration {
@@ -237,6 +260,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   background: url(../img/regitration/bg.png);
+  background-size: 100%;
 }
 
 .registration__form {
@@ -293,9 +317,21 @@ body {
 }
 
 .registration__form button {
+  display: inline-block;
+  text-align: center;
+  max-width: 66px;
+  margin: 0 auto;
   margin-top: 33px;
   border: none;
   background: none;
+  padding: 0;
+}
+
+.registration__form button:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 footer {
