@@ -436,7 +436,7 @@ footer p {
     font-size: 27px;
   }
   .main-information {
-    padding-bottom: 30px;
+    padding-bottom: 10px;
   }
   .main-information__item_horizontal, .main-information__item_vertical {
     padding-bottom: 65px;
@@ -463,18 +463,25 @@ footer p {
     text-align: center;
     max-width: 250px;
   }
+  .registration form {
+    width: 320px;
+    height: 320px;
+  }
+  .registration form .registration__submit-btn {
+    margin-top: 1px;
+  }
   .registration textarea {
     width: 175px;
   }
   .registration input {
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 10px;
     width: 175px;
-    height: 35px;
+    height: 25px;
   }
   .registration .registration__form {
-    width: 320px;
-    height: 320px;
+    width: 300px;
+    height: 300px;
   }
   .registration .registration_wrap {
     max-width: 320px;

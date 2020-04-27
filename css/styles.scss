@@ -371,7 +371,7 @@ footer {
         }
     }
     .main-information {
-        padding-bottom: 30px;
+        padding-bottom: 10px;
         &__item_horizontal, &__item_vertical {
             padding-bottom: 65px;
             display: block;
@@ -402,6 +402,14 @@ footer {
         
     }
     .registration {
+        
+        form {
+            .registration__submit-btn{
+                margin-top: 1px;
+            }
+            width: 320px;
+            height: 320px;
+        }
         textarea {
             
             
@@ -409,15 +417,15 @@ footer {
         }
         input {
             margin: 0 auto;
-            margin-top: 20px;
+            margin-top: 10px;
             width: 175px;
-            height: 35px;
+            height: 25px;
             
           
         }
         .registration__form {
-            width: 320px;
-            height: 320px;
+            width: 300px;
+            height: 300px;
         }
         .registration_wrap {
             max-width: 320px;
