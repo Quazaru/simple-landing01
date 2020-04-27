@@ -281,10 +281,7 @@ button:active {
   background-size: 100%;
 }
 
-.registration__form {
-  margin: 0 auto;
-  margin-top: 161px;
-  margin-bottom: 46px;
+.registration__form-wrap form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -296,45 +293,24 @@ button:active {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  margin: 0 auto;
+  margin-top: 161px;
+  margin-bottom: 46px;
   background-color: rgba(255, 255, 255, 0.808);
   border-radius: 50%;
   width: 430px;
   height: 430px;
 }
 
-.registration__form textarea {
+.registration__form-wrap form textarea {
   margin: 0 auto;
   border: 1px solid #4c505d;
   border-radius: 3px;
-  width: 275px;
+  width: 80%;
 }
 
-.registration__form input {
-  margin: 0 auto;
-  border: 1px solid #656a7c;
-  border-radius: 3px;
-  width: 275px;
-  height: 35px;
-  margin-bottom: 15px;
-}
-
-.registration__form input::-webkit-input-placeholder {
-  color: #4c505d;
-}
-
-.registration__form input:-ms-input-placeholder {
-  color: #4c505d;
-}
-
-.registration__form input::-ms-input-placeholder {
-  color: #4c505d;
-}
-
-.registration__form input::placeholder {
-  color: #4c505d;
-}
-
-.registration__form button {
+.registration__form-wrap form .registration__submit-btn {
+  width: 70px;
   display: inline-block;
   text-align: center;
   max-width: 66px;
@@ -345,7 +321,33 @@ button:active {
   padding: 0;
 }
 
-.registration__form button:hover {
+.registration__form-wrap form .registration__input {
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #656a7c;
+  border-radius: 3px;
+  max-width: 60%;
+  max-height: 35px;
+  margin-bottom: 15px;
+}
+
+.registration__form-wrap form .registration__input::-webkit-input-placeholder {
+  color: #4c505d;
+}
+
+.registration__form-wrap form .registration__input:-ms-input-placeholder {
+  color: #4c505d;
+}
+
+.registration__form-wrap form .registration__input::-ms-input-placeholder {
+  color: #4c505d;
+}
+
+.registration__form-wrap form .registration__input::placeholder {
+  color: #4c505d;
+}
+
+.registration__form-wrap form .registration__submit-btn:hover {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
   -webkit-transition: 0.4s;

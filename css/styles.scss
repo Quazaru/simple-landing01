@@ -222,54 +222,58 @@ button:active {
     background: url(../img/regitration/bg.png);
     background-size: 100%;
     
-    &__form {
-        
-        margin: 0 auto;
-        margin-top: 161px;
-        margin-bottom: 46px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        background-color: rgba(255, 255, 255, 0.808);
-        border-radius: 50%;
-        width: 430px;
-        height: 430px;
-        textarea {
-            margin: 0 auto;
-            border: 1px solid #4c505d;
-            border-radius: 3px;
-            width: 275px;
-        }
-        input {
-            margin: 0 auto;
-            border: 1px solid #656a7c;
-            border-radius: 3px;
-            width: 275px;
-            height: 35px;
-            
-            margin-bottom: 15px;
-        }
-        input::placeholder {
-            color: #4c505d;
-        }
-        button {
-            display: inline-block;
+    &__form-wrap {
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             text-align: center;
-            max-width: 66px;
             margin: 0 auto;
-            margin-top: 33px;
-            border: none;
-            background: none;
-            padding: 0;
-        }
-        button:hover {
-            transform: rotate(360deg);
-            transition: 0.4s;
-        }
-        
+            margin-top: 161px;
+            margin-bottom: 46px;
+
+            background-color: rgba(255, 255, 255, 0.808);
+            border-radius: 50%;
+            width: 430px;
+            height: 430px;
+            textarea {
+                margin: 0 auto;
+                border: 1px solid #4c505d;
+                border-radius: 3px;
+                width: 80%;
+            }
+            .registration__submit-btn {
+                width: 70px;
+                display: inline-block;
+                text-align: center;
+                max-width: 66px;
+                margin: 0 auto;
+                margin-top: 33px;
+                border: none;
+                background: none;
+                padding: 0;
+            }
+            .registration__input {
+                display: block;
+                margin: 0 auto;
+                border: 1px solid #656a7c;
+                border-radius: 3px;
+                max-width: 60%;
+                max-height: 35px;
+
+                margin-bottom: 15px;
+            }
+            .registration__input::placeholder {
+                color: #4c505d;
+            }
+
+            .registration__submit-btn:hover {
+                transform: rotate(360deg);
+                transition: 0.4s;
+            }
+        } 
     }
-      
+  
 }
 footer {
    
