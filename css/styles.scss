@@ -2,6 +2,13 @@ body {
     font-family: 'Open Sans', sans-serif;
     
 }
+p{
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
 .container{
     max-width: 1024px;
     display: block;
@@ -21,7 +28,7 @@ button:active {
 
 .welcome {
     background: url(../img/header/header-bg.png) no-repeat;
-    background-size: 100%;
+    background-size: cover;
     display: flex;
     justify-content: center;
     &__logo {
@@ -103,7 +110,10 @@ button:active {
         button:hover {
             background-color: #1e6cb4;
         }
-       
+      
+    }
+    @media screen and (max-width:700px)  {
+           background-size: auto;
     }
 }
 // Начинаю делать блок с фичами и открываю мэйн
@@ -142,6 +152,7 @@ button:active {
 // MAIN-INFORMATION
 .main-information {
     color: #fff;
+    min-height: 1550px;
     &__item_vertical{
         margin-top: 108px;
         font-size: 14px;
@@ -158,7 +169,7 @@ button:active {
             font-size: 14px;
             h3{
                 font-size: 39px;
-                min-width: 460px;
+                
                 text-align: center;
                 margin-bottom: 46px;
                 
@@ -272,5 +283,134 @@ footer {
         padding: 0;
         color: #fff;
         text-align: center;
+    }
+}
+@media screen and (max-width:700px) {
+    .welcome {        
+        &__logo {
+            margin-top: 10px;
+            margin-bottom: 58px;
+            img {               
+                max-width: 150px;
+            }
+        }
+       
+        &__caption {
+            font-size: 19px;  
+        }
+        &__bold-caption {
+            font-size: 19px;  
+            font-weight: bold;
+            margin-bottom: 55px;
+        }
+        &__search {
+            padding-top: 10px;
+
+            margin-top: 33px;
+            margin: 0 auto;
+            width: auto;
+            height: 335px;
+            font-size: 10px;
+           
+            img {
+                width: 100%;
+                height: auto;
+                margin-bottom: 27px;
+            }
+            input {
+                display: block;
+                margin: 0 auto;
+                margin-bottom: 30px;
+                margin-top: 20px;                             
+                width: 80%;
+               
+            }                                
+            
+        }    
+    }
+    .features {
+        
+        &__wrap {
+            display: block;
+            
+        }
+        
+        &__item{
+            margin-top: 51px;
+            width: 300px;
+            display: block;
+            img{
+                width: 30%;
+                height: 50%;
+                display: block;
+                margin-bottom: 10px;
+                
+                margin: 0 auto;
+            }
+            p{
+                margin: 0 auto;               
+                font-size: 15px;                                
+                width: 75%;
+            }
+            h3{
+                text-align: center;
+                font-size: 27px;
+    
+            }
+        }
+    }
+    .main-information {
+
+        &__item_horizontal, &__item_vertical {
+            padding-bottom: 65px;
+            display: block;
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+            .main-information__description{
+                text-align: center;
+                p{
+                    font-size: 12px;
+                    width: 290px;
+                    margin: 0 auto;
+                }
+                h3{
+                    font-size: 18px;
+                    display: inline-block;
+                    text-align: center;
+                    max-width: 250px;
+                   
+                }
+                margin: 0;
+                padding: 0;
+                min-width: 300px;
+            }
+        }
+        
+        
+    }
+    .registration {
+        textarea {
+            
+            
+            width: 175px;
+        }
+        input {
+            margin: 0 auto;
+            margin-top: 20px;
+            width: 175px;
+            height: 35px;
+            
+          
+        }
+        .registration__form {
+            width: 320px;
+            height: 320px;
+        }
+        .registration_wrap {
+            max-width: 320px;
+         
+        }
     }
 }
