@@ -279,6 +279,7 @@ button:active {
           justify-content: center;
   background: url(../img/regitration/bg.png);
   background-size: 100%;
+  padding-bottom: 35px;
 }
 
 .registration__form-wrap form {
@@ -311,6 +312,7 @@ button:active {
 
 .registration__form-wrap form .registration__submit-btn {
   width: 70px;
+  height: 70px;
   display: inline-block;
   text-align: center;
   max-width: 66px;
@@ -355,6 +357,7 @@ button:active {
 }
 
 footer {
+  margin-top: 100px;
   bottom: 0;
   margin: 0;
   background-color: #43a06d;
@@ -378,10 +381,10 @@ footer p {
     max-width: 150px;
   }
   .welcome__caption {
-    font-size: 19px;
+    font-size: 25px;
   }
   .welcome__bold-caption {
-    font-size: 19px;
+    font-size: 34px;
     font-weight: bold;
     margin-bottom: 55px;
   }
@@ -391,7 +394,7 @@ footer p {
     margin: 0 auto;
     width: auto;
     height: 335px;
-    font-size: 10px;
+    font-size: 14px;
   }
   .welcome__search img {
     width: 100%;
@@ -409,18 +412,21 @@ footer p {
     display: block;
   }
   .features__item {
+    display: block;
+    margin: 0 auto;
     margin-top: 51px;
     width: 300px;
-    display: block;
   }
   .features__item img {
     width: 30%;
     height: 50%;
     display: block;
-    margin-bottom: 10px;
     margin: 0 auto;
+    margin-bottom: 30px;
   }
   .features__item p {
+    margin-top: 20px;
+    text-align: center;
     margin: 0 auto;
     font-size: 15px;
     width: 75%;
@@ -428,6 +434,9 @@ footer p {
   .features__item h3 {
     text-align: center;
     font-size: 27px;
+  }
+  .main-information {
+    padding-bottom: 30px;
   }
   .main-information__item_horizontal, .main-information__item_vertical {
     padding-bottom: 65px;
@@ -444,7 +453,7 @@ footer p {
     min-width: 300px;
   }
   .main-information__item_horizontal .main-information__description p, .main-information__item_vertical .main-information__description p {
-    font-size: 12px;
+    font-size: 14px;
     width: 290px;
     margin: 0 auto;
   }

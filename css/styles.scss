@@ -221,6 +221,7 @@ button:active {
     justify-content: center;
     background: url(../img/regitration/bg.png);
     background-size: 100%;
+    padding-bottom: 35px;
     
     &__form-wrap {
         form{
@@ -244,6 +245,7 @@ button:active {
             }
             .registration__submit-btn {
                 width: 70px;
+                height: 70px;
                 display: inline-block;
                 text-align: center;
                 max-width: 66px;
@@ -276,7 +278,7 @@ button:active {
   
 }
 footer {
-   
+    margin-top: 100px;
     bottom: 0;
     margin: 0;
     background-color: #43a06d;
@@ -300,10 +302,10 @@ footer {
         }
        
         &__caption {
-            font-size: 19px;  
+            font-size: 25px;  
         }
         &__bold-caption {
-            font-size: 19px;  
+            font-size: 34px;  
             font-weight: bold;
             margin-bottom: 55px;
         }
@@ -314,7 +316,7 @@ footer {
             margin: 0 auto;
             width: auto;
             height: 335px;
-            font-size: 10px;
+            font-size: 14px;
            
             img {
                 width: 100%;
@@ -340,18 +342,23 @@ footer {
         }
         
         &__item{
+            display: block;
+            margin: 0 auto;
             margin-top: 51px;
             width: 300px;
-            display: block;
+            
             img{
                 width: 30%;
                 height: 50%;
                 display: block;
-                margin-bottom: 10px;
-                
                 margin: 0 auto;
+                margin-bottom: 30px;
+                
+                
             }
             p{
+                margin-top: 20px;
+                text-align: center;
                 margin: 0 auto;               
                 font-size: 15px;                                
                 width: 75%;
@@ -364,7 +371,7 @@ footer {
         }
     }
     .main-information {
-
+        padding-bottom: 30px;
         &__item_horizontal, &__item_vertical {
             padding-bottom: 65px;
             display: block;
@@ -375,7 +382,7 @@ footer {
             .main-information__description{
                 text-align: center;
                 p{
-                    font-size: 12px;
+                    font-size: 14px;
                     width: 290px;
                     margin: 0 auto;
                 }
